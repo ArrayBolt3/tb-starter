@@ -24,8 +24,8 @@ if [ -f /usr/libexec/helper-scripts/pre.bsh ]; then
    source "${HELPER_SCRIPTS_PATH:-}"/usr/libexec/helper-scripts/pre.bsh
 fi
 
-# shellcheck source=../../../helper-scripts/usr/libexec/helper-scripts/has.sh
-source "${HELPER_SCRIPTS_PATH:-}"/usr/libexec/helper-scripts/has.sh
+# shellcheck source=../../../helper-scripts/usr/libexec/helper-scripts/has.bsh
+source "${HELPER_SCRIPTS_PATH:-}"/usr/libexec/helper-scripts/has.bsh
 
 ## sets: boot_session
 if [ -f /usr/libexec/helper-scripts/boot-session-detection.bsh ]; then
